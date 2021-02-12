@@ -11,42 +11,11 @@
         <a href="blog.html"> Blog Link</a>
         <a href="card.html"> Card Link (broken) </a>
 
-        <form id="form" onsubmit="return false;">
-            <input style=position:absolute;top:80%;left:5%;width:40%; type="text" id="userInput">
-            <input style=position:absolute;top:50%;left:5%;width:40%; type="submit" onclick="userName()">
-        </form>
-
-        <script>
-            function sayHi(){
-                alert ("hello")
-            }
-            function cardInput(){
-                var input = ""
-                prompt('Insert your Credit Card')
-                if (input.length == 13){
-                    
-                    print('true')
-                }
-                else{
-                    print('false')
-                }
-            }
-            function userName(){
-                var input = document.getElementById("userInput");
-                alert(input);
-            }
-        </script>
-
-        <button onclick="var inputNumber = prompt('Insert your Credit Card')">Add Card</button>
-        <button onclick="alert(inputNumber)">Card Inputed</button>
-        <button onclick="alert(test)">Test</button>
-
-        <input id="myInput" type="text" value="Swag" />
-
-        <script>
-            var test = "myInput";
-            document.getElementById("myInput").value = test;
-        </script>
+        <form id="myForm">
+            First name: <input type="text" name="fname" value="Donald"><br>
+            Last name: <input type="text" name="lname" value="Duck"><br>
+            <input type="submit" value="Submit">
+          </form>
 
     </body>
 </html>
