@@ -7,15 +7,24 @@
     <body>
         <h1> Home </h1>
         <p> This is for my Software Engeneering class </p>
-        <button onclick="sayHi()">Greet Me</button>
+        <button onclick="sayHi()">Greet Me </button>
         <a href="blog.html"> Blog Link</a>
         <a href="card.html"> Card Link (broken) </a>
 
         <form id="myForm">
-            First name: <input type="text" name="fname" value="Donald"><br>
-            Last name: <input type="text" name="lname" value="Duck"><br>
+            First name: <input type="text" name="firstName" value="Donald"><br>
+            Last name: <input type="text" name="lastName" value="Duck"><br>
             <input type="submit" value="Submit">
-          </form>
+        </form>
+
+        <button onclick="test()"> TEST </button>
+        <script>
+            function test(){
+                if (firstName == Donald){
+                    alert("It WORKS!")
+                }
+            }
+        </script>
 
     </body>
 </html>
