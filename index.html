@@ -17,18 +17,12 @@
             <input type="submit" value="Submit">
         </form>
 
-        <button onclick="test()"> TEST </button>
-
         <script>
-            function test(){
-                if (firstName == Donald){
-                    alert("It WORKS!")
-                }
-                else{
-                    alert("not working...")
-                }
-            }
+            var name = window.prompt("Enter your name: ")
+            alert("Your name is " + name)
         </script>
+
+        <button onclick="name"> Input Name </button> 
 
     </body>
 </html>
