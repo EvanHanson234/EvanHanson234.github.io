@@ -11,6 +11,11 @@
         <a href="blog.html"> Blog Link</a>
         <a href="card.html"> Card Link (broken) </a>
 
+        <form id="form" onsubmit="return false;">
+            <input style=position:absolute;top:80%;left:5%;width:40%; type="text" id="userInput">
+            <input style=position:absolute;top:50%;left:5%;width:40%; type="submit" onclick="userName()">
+        </form>
+
         <script>
             function sayHi(){
                 alert ("hello")
@@ -31,11 +36,6 @@
                 alert(input);
             }
         </script>
-
-        <form id="form" onsubmit="return false;">
-            <input style=position:absolute;top:80%;left:5%;width:40%; type="text" id="userInput">
-            <input style=position:absolute;top:50%;left:5%;width:40%; type="submit" onclick="userName()">
-        </form>
 
         <button onclick="prompt('Insert your Credit Card')">Add Card</button>
 
