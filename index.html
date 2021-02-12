@@ -12,17 +12,17 @@
         <a href="card.html"> Card Link (broken) </a>
 
         <form id="myForm">
-            First name: <input type="text" name="firstName" value="Donald"><br>
-            Last name: <input type="text" name="lastName" value="Duck"><br>
+            First name: <input type="text" name="firstName"><br>
+            Last name: <input type="text" name="lastName"><br>
             <input type="submit" value="Submit">
         </form>
 
         <script>
-            var name = window.prompt("Enter your name: ")
-            alert("Your name is " + name)
+            var userName = window.prompt("Enter your name: ")
+            alert("Your name is " + userName)
         </script>
 
-        <button onclick="name"> Input Name </button> 
+        <button onclick="alert('Your name is ' + userName)"> Input Name </button> 
 
     </body>
 </html>
