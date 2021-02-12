@@ -5,6 +5,7 @@
 
     </head>
     <body>
+        //introduction and navigation of site
         <h1> Home </h1>
         <p> This is for my Software Engeneering class </p>
         <button onclick="sayHi()">Greet Me </button>
@@ -17,6 +18,7 @@
             <input type="submit" value="Submit">
         </form>
 
+        //Prompt windows that ask name and card number
         <script>
             var userName = window.prompt("Enter your name: ")
             alert("Your name is " + userName)
@@ -29,12 +31,14 @@
             alert("Your card number is " + valid)
         </script>
 
-        <button onclick="alert('Your name is ' + userName)"> Input Name </button> 
-
-        <p id="demo"></p>
-
+        //buttons that show the use inputs
+        <button onclick="alert('Your name is ' + userName)"> Name Input </button> 
+        <button onclick="alert('Your card number is ' + userCard)"> Card Input </button> 
+        <p id="n"></p>
+        <p id="c"></p>
         <script>
-            document.getElementById("demo").innerHTML = userName;
+            document.getElementById("n").innerHTML = userName;
+            document.getElementById("c").innerHTML = userCard;
         </script>
 
     </body>
