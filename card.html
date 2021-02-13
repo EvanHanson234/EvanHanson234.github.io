@@ -10,7 +10,26 @@
 
         </script>
 
-        <button type="button" onclick="prompt('Insert your Credit Card')">Add Card</button>
+        <button type="button" onclick="promptFunctions()">Prompts</button>
+
+        <!-- //Prompt windows that ask name and card number -->
+        <script>
+            function promptFunctions() { // Declare the function
+                var userName = window.prompt("Enter your name: ")
+                alert("Your name is " + userName)
+
+                var valid = false;
+                var userCard = window.prompt("Enter your Credit Card Number: ")
+                if (userCard.length == 13){
+                    valid = true;
+                }
+                alert("Your card number is " + valid)
+            }
+ 
+            promptFunctions(); // Call the function
+
+            
+        </script>
 
     </body>
 </html>
