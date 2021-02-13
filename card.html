@@ -5,11 +5,6 @@
         <h1> Card Homework </h1>
         <a href="index.html"> Home Link</a>
 
-        <script>
-            var input = "";
-
-        </script>
-
         <button type="button" onclick="promptFunctions()">Prompts</button>
 
         <!-- //Prompt windows that ask name and card number -->
@@ -26,9 +21,19 @@
                 alert("Your card number is " + valid)
             }
  
-            promptFunctions(); // Call the function
+            promptFunctions(); // Call the function  
+        </script>
 
-            
+        <!-- buttons that show the use inputs -->
+        <button onclick="alert('Your name is ' + userName)"> Name Input </button> 
+        <button onclick="alert('Your card number is ' + userCard)"> Card Input </button>
+        <p>Username: </p>
+        <p id="n"></p> <br></br>
+        <p>Card Number: </p>
+        <p id="c"></p> <br></br>
+        <script>
+            document.getElementById("n").innerHTML = userName;
+            document.getElementById("c").innerHTML = userCard;
         </script>
 
     </body>
